@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Map</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="controls">
+        <label for="date-picker">Select Date: </label>
+        <input type="date" id="date-picker" />
+        <button id="load-button">Load Data</button>
+    </div>
+    <div id="map"></div>
+    <div id="chatbot-container">
+        <div id="chat-bubble"></div>
+        <div id="chat-interface">
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
